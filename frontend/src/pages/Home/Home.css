@@ -1,0 +1,191 @@
+/* === Main Layout === */
+
+.main-container {
+    display: flex;
+    width: 100vw;
+    padding: 0px 20px 20px 20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.tweets-container {
+    flex: 1;
+    min-width: 0;
+    padding: 24px;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* === Tweet Posting Section === */
+
+.post-your-tweet {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tweet-input {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.tweet-input:focus {
+    min-height: 180px;
+    outline: none;
+    border-color: #000;
+}
+
+.tweet-action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.image-select-btn {
+    background-color: #e6ecf0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.post-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.post-btn:hover {
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+/* === Image Preview === */
+
+.tweet-image-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tweet-preview-img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* === Right Sidebar User Info === */
+
+.info-container {
+    width: 28vw;
+    min-width: 300px;
+    max-width: 380px;
+    padding: 0 20px 20px 20px;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+
+.user-info {
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    padding: 28px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.user-profile-pic,
+.default-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    border: 3px solid #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: white;
+}
+
+.user-info p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #000;
+    word-break: break-word;
+    line-height: 1.5;
+}
+
+.user-info p svg {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.user-info p:first-of-type {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: 8px;
+    text-transform: lowercase;
+}
+
+.user-joined {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid #e3e3e3;
+    margin: 0 20px;
+    gap: 20px;
+}
+
+.user-stats .stat {
+    text-align: center;
+    flex: 1;
+}
+
+.user-stats .stat strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.user-stats .stat span {
+    font-size: 0.85rem;
+    color: #555;
+}
