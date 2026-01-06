@@ -4,7 +4,7 @@ const StarRoute = () => {
   return (
     <>
     <div className="container-star-route">
-        <img src='https://media.istockphoto.com/id/1404059706/vector/website-page-not-found-error-404-oops-worried-robot-character-peeking-out-of-outer-space.jpg?s=612x612&w=0&k=20&c=DvPAUof9UsNuNqCJy2Z7ZLLk75qDA3bbLXOOW_50wAk=' alt='Page not available'></img>
+        <img src='https://hw-images.hostwinds.com/cdn-cgi/image/height=250%2cfit=contain%2cf=auto%2cwidth=1280%2cq=85/strapi-images/webpage_not_available_blog_banner_83d642d94d.jpg' alt='Page not available'></img>
         <h1>Page Not Available</h1>
     </div>
     </>

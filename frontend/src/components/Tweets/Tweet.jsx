@@ -4,7 +4,7 @@ import axios from 'axios';
 import './Tweet.css';
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { FaRegBookmark, FaBookmark, FaRegComment, FaTrashAlt } from "react-icons/fa";
-import CommentModal from './CommentModal';
+// import CommentModal from './CommentModal';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
@@ -144,7 +144,7 @@ const Tweet = ({ tweet, user, tweetedAt, user_id, tweet_id, likes = [], comments
       </div>
 
       {/* Comment Modal */}
-      <CommentModal
+      {/* <CommentModal
         isOpen={showComments}
         onRequestClose={() => setShowComments(false)}
         tweetId={tweet_id}
@@ -155,7 +155,7 @@ const Tweet = ({ tweet, user, tweetedAt, user_id, tweet_id, likes = [], comments
         user={user}
         imageUrl={imageUrl}
         apiBaseUrl={API_BASE_URL}
-      />
+      /> */}
 
       {/* Image Modal */}
       {showImageModal && (
