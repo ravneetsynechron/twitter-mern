@@ -129,7 +129,7 @@ const Profile = () => {
       <div className="profile-full-wrapper">
         <div className="profile-wrapper">
           <div className="profile-photo">
-            <img src={userInfo.photo} alt="Profile" />
+            <img src={`https://synechron-mern-project.s3.ap-south-1.amazonaws.com/profile-pics/${user._id}.jpeg`} alt="Profile" />
           </div>
 
           <div className="profile-details">

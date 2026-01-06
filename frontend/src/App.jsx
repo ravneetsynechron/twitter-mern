@@ -26,8 +26,6 @@ function App() {
           <Route path="/profile/:tab" element={<Profile />} />
           <Route path="/profile/edit" element={<EditProfile />} />
           <Route path="/user/:email" element={<OtherUserProfile />} />
-          <Route path="/chat/:email" element={<Chat />} />
-          <Route path="/allChats" element={<AllChats />} />
           <Route path="*" element={<StarRoute />} />
         </Routes>
       </Router>
