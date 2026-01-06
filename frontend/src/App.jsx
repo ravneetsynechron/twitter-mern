@@ -9,8 +9,6 @@ import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
 import EditProfile from './pages/Profile/EditProfile';
 import OtherUserProfile from './pages/Profile/OtherUserProfile';
-import Chat from "./pages/Chat/Chat";
-import AllChats from './pages/Chat/AllChats';
 
 function App() {
   return (
